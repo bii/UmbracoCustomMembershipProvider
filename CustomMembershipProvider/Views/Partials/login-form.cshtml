@@ -1,0 +1,46 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using System.Web.Mvc.Html
+@using ClientDependency.Core.Mvc
+@using Umbraco.Web
+@using Umbraco.Web.Models
+@using Umbraco.Web.Controllers
+
+
+@{
+    var loginModel = new LoginModel {RedirectUrl = HttpContext.Current.Request.Url.AbsolutePath};
+    var loginStatusModel = Members.GetCurrentLoginStatus();
+
+    Html.EnableClientValidation();
+    Html.EnableUnobtrusiveJavaScript();
+    Html.RequiresJs("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js");
+    Html.RequiresJs("https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js");
+    Html.RequiresJs("https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js");
+}
+
+@if (!loginStatusModel.IsLoggedIn)
+{
+@* NOTE: This RenderJsHere code should be put on your main template page where the rest of your script tags are placed *@
+    @Html.RenderJsHere()
+
+    using (Html.BeginUmbracoForm<UmbLoginController>("HandleLogin"))
+    {
+        <div class="form-icons">
+            <h4>Log in here</h4>
+            @Html.HiddenFor(m => loginModel.RedirectUrl)
+
+            <div class="input-group">
+                <span class="input-group-label">
+                    <i class="fa fa-user"></i>
+                </span>
+                @Html.TextBoxFor(m => loginModel.Username, new {@class = "input-group-field", placeholder = "Username"})
+            </div>
+            <div class="input-group">
+                <span class="input-group-label">
+                    <i class="fa fa-key"></i>
+                </span>
+                @Html.PasswordFor(m => loginModel.Password, new {@class = "input-group-field", placeholder = "Password"})
+            </div>
+            <button class="button expanded">Login</button>
+        </div>
+    }
+}

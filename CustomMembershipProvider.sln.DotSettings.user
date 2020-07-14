@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2e21591c_002D7d00_002D468b_002Dabf8_002De1c1b6105351/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestGetMemberPropertiesByNodeId" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E2BE4844-76B1-410D-8B88-1ED88240ECB3::.NETFramework,Version=v4.7.2::CustomMembershipProviderTest.Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4326d2e7_002Df719_002D477a_002Db860_002D86245a01c707/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestFind" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E2BE4844-76B1-410D-8B88-1ED88240ECB3::.NETFramework,Version=v4.7.2::CustomMembershipProviderTest.Tests.TestGetMemberPropertiesByNodeId&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

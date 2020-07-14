@@ -1,0 +1,100 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = null;
+}
+
+@* the fun starts here *@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Foundation | Welcome</title>
+    @* ReSharper disable once Html.PathError *@
+    <link rel="stylesheet" href="/dist/css/main.css"/>
+</head>
+<body>
+<!-- Start Top Bar -->
+<div class="top-bar">
+    <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">Yeti Store</li>
+            <li class="has-submenu">
+                <a href="#">One</a>
+                <ul class="submenu menu vertical" data-submenu>
+                    <li>
+                        <a href="#">One</a>
+                    </li>
+                    <li>
+                        <a href="#">Two</a>
+                    </li>
+                    <li>
+                        <a href="#">Three</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Two</a>
+            </li>
+            <li>
+                <a href="#">Three</a>
+            </li>
+        </ul>
+    </div>
+    <div class="top-bar-right">
+        <ul class="menu">
+            <li>
+                <input type="search" placeholder="Search">
+            </li>
+            <li>
+                <button type="button" class="button">Search</button>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- End Top Bar -->
+<br>
+<!-- You can now combine a row and column if you just need a 12 column row -->
+<div class="row columns">
+    <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Features</a>
+            </li>
+            <li class="disabled">Gene Splicing</li>
+            <li>
+                <span class="show-for-sr">Current: </span> Cloning
+            </li>
+        </ul>
+    </nav>
+</div>
+
+@RenderBody()
+
+<div class="row column">
+    <hr>
+    <ul class="menu">
+        <li class="align-self-middle">Yeti Store</li>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+    </ul>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/plugins/foundation.core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LcFq_gUAAAAAFIgcYRCZfayNdMelzB_8mAPBNbC"></script>
+@* ReSharper disable once Html.PathError *@
+<script src="/dist/js/main.bundle.js"></script>
+</body>
+</html>
