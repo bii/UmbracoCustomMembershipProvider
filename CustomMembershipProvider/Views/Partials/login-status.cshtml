@@ -23,10 +23,7 @@
 
     using (Html.BeginUmbracoForm<UmbLoginStatusController>("HandleLogout"))
     {
-        <fieldset>
-            <legend>Logout</legend>
-            <button>Logout</button>
-        </fieldset>
+        <button class="button -align-right">Logout</button>
 
         @Html.HiddenFor(m => logoutModel.RedirectUrl)
     }
