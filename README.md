@@ -1,4 +1,7 @@
-# Umbraco 8.6.1 with reCAPTCHA v3 implementation utilizing ES6 features.
+# Custom Membership provider for Umbraco 8.6.3 and MS SQL Server
+
+The custom code is located in the _Providers_ folder. The background for the project was to make integration 
+to U-Intra. The documentation was poor, so I decided to look into how a custom membership provider could look.  
 
 ## Installation
 
